@@ -2,11 +2,12 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/estilos_index.css">
 	<title>Fotografos Principiantes</title>
 </head>
 <body>
-	<div id="cont">
+	<div id="contenido">
+		
 		<header>
 			<div id="titulo">
 				<h1>Comenzando con la fotograf&iacute;a</h1>
@@ -14,9 +15,10 @@
 			<div id="menu">
 				<a href="index.html" style="text-decoration: none;">Inicio</a>
 				<a href="paisajes.html">Paisajes</a>
-				<a href="retrato.html">Retrato</a>
+				<a href="retratos.html">Retrato</a>
 			</div>
 		</header>
+
 		<section id="img_central">
 			<div>
 				<img src="imagenes/paisaje.jpg" alt="">
@@ -24,18 +26,58 @@
 			</div>
 		</section>
 		<section id="img_sec">
-			<div id="img_sec1">
-				<img src="imagenes/cascada.jpg" alt="">
-				<figcaption><a href="http://www.freepik.com">Designed by 4045 / Freepik</a></figcaption>
+			<div class="link_int">
+				<div id="img_sec1" class="animacion">
+					<img src="imagenes/cascada.jpg" alt="">
+					<figcaption>
+						<a href="http://www.freepik.com">Designed by 4045 / Freepik</a>
+					</figcaption>
+				</div>
+				<h3><a href="paisajes.html">Paisajes</a></h3>
 			</div>
-			<div id="img_sec2">
-				<img src="imagenes/retrato.jpg" alt="">
-				<figcaption><a href="http://www.freepik.com">Designed by Freepik</a></figcaption>
+			<div class="link_int">
+				<div id="img_sec2" class="animacion">
+					<img src="imagenes/retrato.jpg" alt="">
+					<figcaption>
+						<a href="http://www.freepik.com">Designed by Freepik</a>
+					</figcaption>
+				</div>
+				<h3><a href="retratos.html">Retratos</a></h3>
 			</div>
 		</section>
+
 		<footer>
-			
+			<div>
+				<h1>Contacto</h1>
+				<a href="mailto:info@fotografia.com">info@fotografia.com</a><br>
+				Calle 1  N. 23 <br>
+				Tel&eacute;fono: +123 4567-8901
+			</div>
+			<div>
+				<h1>T&eacute;rminos</h1>
+				T&eacute;rminos y Condiciones
+			</div>
+			<div>
+				<h1>Redes Sociales</h1>
+				Siguenos en nuestras redes sociales
+				<p>
+					<img src="imagenes/linkedin.svg" alt="linkedin" class="icon_social"> ComenzandoFotograf&iacute;a
+				</p>
+				<p>
+					<img src="imagenes/facebook.svg" alt="facebook" class="icon_social"> ComenzandoFotograf&iacute;a
+				</p>
+				<p>
+					<img src="imagenes/twitter.svg" alt="twitter" class="icon_social">
+					&#64; ComenzandoFotograf&iacute;a
+				</p>
+			</div>
+			<div>
+				<h1>Derechos</h1>
+				V&iacute;ctor Gonz&aacute;lez, &copy; CopyRight 2019
+			</div>
 		</footer>
+
 	</div>
+
 </body>
 </html>

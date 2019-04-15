@@ -1,0 +1,169 @@
+@font-face{
+	font-family: "MyFont";
+	src: url(../fuentes/DancingScript-Regular.otf);
+}
+
+body {
+	background-color: #02010a;
+	font-family: MyFont, Script;
+}
+
+header, footer {
+	display: flex;
+	display: -webkit-flex;
+
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+header {
+	background-color: #5b7989;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+}
+
+figcaption {
+	text-align: right;
+	font-size: .5rem;
+	margin: 0px; 
+}
+
+figcaption a, figcaption a:link {
+	color: #02010A !important;
+	text-decoration: none;
+}
+
+#contenido {
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+#titulo {
+	color: #fff;
+	text-shadow: 2px 2px 5px #02010A;
+	margin-left: 1rem;
+}
+
+#menu {
+	margin-right: 1rem;
+	word-spacing: 1.5rem;
+}
+
+#menu a, #menu a:link {
+	color: white;
+}
+
+#img_central {
+	display: flex;
+	display: -webkit-flex;
+
+	justify-content: center;
+	background-color: #82c3a6;
+	padding: 20px;
+}
+
+#img_sec {
+	display: flex;
+	display: -webkit-flex;
+
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	
+	justify-content: space-around;
+	background-color: #d5c75f;
+	border: solid 1px;
+
+	width: 100%;
+	text-align: center;
+}
+
+.link_int a{
+	text-decoration: none;
+	color: #fff;
+	text-shadow: 2px 2px 5px #02010A;
+}
+
+footer {
+	background-color: #C6d5c5;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+footer div {
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+	line-height: 1.5rem;
+}
+
+.icon_social {
+	width: 30px;
+}
+
+/* Efectos */
+
+.animacion {
+	-webkit-transition: -webkit-transform 1s;
+	transition: transform 1s;
+}
+
+#img_sec1:hover {
+	transform: rotate(10deg);
+	border: solid 2px;
+	box-shadow: 2px 2px 5px #82c3a6;
+}
+
+#img_sec2:hover {
+	transform: translate(20px, -5px);
+	border: solid 2px;
+	box-shadow: 2px 2px 5px #82c3a6;
+}
+
+
+/*Breackpoints*/
+
+/* Escritorio */
+
+@media screen and (min-width: 901px) {
+
+	#img_sec img {
+		width: 400px;
+	}
+
+	.link_int {
+		margin: 20px 0px;
+	}
+
+	footer div {
+		padding: 1rem;
+	}
+
+}
+
+/* Moviles */
+
+@media screen and (max-width: 900px) {
+
+	header div,
+	footer div,
+	img {
+		width: 100%;
+	}
+
+	.link_int {
+		width: 100%;
+		margin: 20px;
+	}
+
+	#titulo, #menu {
+		margin: 0px;
+	}
+
+	#menu {
+		margin-bottom: 1rem;
+	}
+
+}
