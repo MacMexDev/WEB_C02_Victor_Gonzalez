@@ -1,0 +1,106 @@
+@font-face{
+	font-family: "MyFont";
+	src: url(../fuentes/DancingScript-Regular.otf);
+}
+
+body {
+	background-color: #02010a;
+	font-family: MyFont, Script;
+}
+
+header, footer {
+	display: flex;
+	display: -webkit-flex;
+
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+header {
+	background-color: #5b7989;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	text-align: center;
+}
+
+figcaption {
+	text-align: right;
+	font-size: .5rem;
+	margin: 0px; 
+}
+
+figcaption a, figcaption a:link {
+	color: #02010A !important;
+	text-decoration: none;
+}
+
+#contenido {
+	max-width: 900px;
+	margin: 0px auto;
+}
+
+#titulo {
+	color: #fff;
+	text-shadow: 2px 2px 5px #02010A;
+	margin-left: 1rem;
+}
+
+#menu {
+	margin-right: 1rem;
+	word-spacing: 1.5rem;
+}
+
+#menu a, #menu a:link {
+	color: white;
+}
+
+footer {
+	background-color: #C6d5c5;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+}
+
+footer div {
+	padding-left: 1rem;
+	padding-bottom: 1rem;
+	line-height: 1.5rem;
+}
+
+.icon_social {
+	width: 30px;
+}
+
+/*Breackpoints*/
+
+/* Escritorio */
+
+@media screen and (min-width: 901px) {
+
+	footer div {
+		padding: 1rem;
+	}
+
+}
+
+/* Moviles */
+
+@media screen and (max-width: 900px) {
+
+	header div,
+	footer div,
+	img {
+		width: 100%;
+	}
+
+	#titulo, #menu {
+		margin: 0px;
+	}
+
+	#menu {
+		margin-bottom: 1rem;
+	}
+
+}
