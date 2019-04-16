@@ -1,0 +1,45 @@
+#img_gpo img:nth-child(1){
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+}
+
+#img_gpo img:nth-child(even){
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+#img_gpo img:nth-child(3){
+	filter: sepia(90);
+	-webkit-filter: sepia(90);
+}
+
+/*Breackpoints*/
+
+/* Escritorio */
+
+@media (min-width: 901px) {
+
+	#img_gpo img {
+		width: 20vw;
+		margin: 20px 0px;
+	}
+
+}
+
+/* Moviles */
+
+@media (max-width: 900px) {
+
+	#img_gpo img {
+		margin: 20px;
+	}
+
+	#img_gpo img:first-child{
+		margin-top: 20px;
+	}
+
+	#img_gpo img:last-child{
+		margin-bottom: 20px;
+	}
+
+}
